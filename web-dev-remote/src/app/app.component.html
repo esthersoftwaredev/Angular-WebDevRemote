@@ -1,16 +1,17 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
-  <mat-toolbar class="header example-toolbar">
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+  <mat-toolbar class="header">
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="example-app-name">Responsive App</h1>
+    <a routerLink="home" routerLinkActive="active"><img src="../assets/images/branding/webdev-remote-LOGO-sized-500px.png" alt=""></a>
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+  <!-- <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0"> -->
+  <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav [(opened)]="opened" [mode]="mobileQuery.matches ? 'over' : 'side'"
       [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
-        <a mat-list-item routerLink="" routerLinkActive="active">Home</a>
+        <a mat-list-item routerLink="home" routerLinkActive="active">Home</a>
         <a mat-list-item routerLink="jobs" routerLinkActive="active">Fake Jobs</a>
         <a mat-list-item routerLink="developers" routerLinkActive="active">Fake Devs</a>
       </mat-nav-list>
@@ -20,6 +21,6 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
   <mat-toolbar class="footer">
-    <span>credits</span>
+    <p>by <a href="https://monacodelisa.com" target="_blank" rel="noopener noreferrer">Esther White</a></p>
   </mat-toolbar>
 </div>
