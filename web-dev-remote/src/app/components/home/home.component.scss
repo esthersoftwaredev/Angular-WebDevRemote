@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
+  min-height: 80vh;
 
   h1, h2 {
     font-family: 'Poppins', sans-serif;
@@ -53,7 +54,7 @@
 
   .disclaimer {
     width: 25vw;
-    margin: 2rem 0 3.5rem;
+    margin: 2rem;
 
     p {
       font-size: 0.9rem;
