@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 import { Job } from "../models/job";
+import { Dev } from "../models/dev";
 
 @Injectable({
 	providedIn: "root",
@@ -13,5 +14,9 @@ export class ApiService {
 
 	getJobs() {
 		return this.http.get<Job[]>(`${this.apiUrl}/jobs`);
+	}
+
+	getDevs() {
+		return this.http.get<Dev[]>(`${this.apiUrl}/devs`);
 	}
 }

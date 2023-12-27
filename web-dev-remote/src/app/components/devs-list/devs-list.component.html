@@ -1,2 +1,19 @@
-<p>devs-list works!</p>
-<p>to be continued</p>
+<div class="component">
+  <div class="caption">
+    <h1>Actual Developers, but they are not on the job market (as far as I know).</h1>
+  </div>
+  <div class="panel-wrapper">
+    @for (developer of developers; track developer) {
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h2>{{ developer.name }}</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p><span>Email: </span>{{ developer.email }}</p>
+      <p><span>Strength: {{ developer.strength }}</span></p>
+      <p><span>Weakness: </span>{{ developer.weakness }}</p>
+    </mat-expansion-panel>
+    }
+  </div>
+</div>
