@@ -30,7 +30,6 @@ import { MatIconModule } from "@angular/material/icon";
 })
 export class AppComponent implements OnInit, OnDestroy {
 	title = "WebDevRemote";
-  opened!: boolean;
 	mobileQuery: MediaQueryList;
 
 	fillerNav = Array.from({ length: 5 }, (_, i) => `Nav Item ${i + 1}`);
@@ -44,7 +43,7 @@ export class AppComponent implements OnInit, OnDestroy {
 	}
 
   ngOnInit(): void {
-    this.opened = true;
+
   }
 
 	ngOnDestroy(): void {

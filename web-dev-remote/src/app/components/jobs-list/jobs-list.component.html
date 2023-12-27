@@ -1,2 +1,16 @@
-<p>jobs-list works!</p>
-<p>to be continued</p>
+<div class="component">
+  @for (job of jobs; track job) {
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h2>{{ job.title }}</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Company: {{ job.company }}</p>
+      <p>Location: {{ job.location }}</p>
+      <p>Description: {{ job.description }}</p>
+      <p>Requirements: {{ job.requirements }}</p>
+      <p>Contact Email: {{ job.contactEmail }}</p>
+    </mat-expansion-panel>
+  }
+</div>
