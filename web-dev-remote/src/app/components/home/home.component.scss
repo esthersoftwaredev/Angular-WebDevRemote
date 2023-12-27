@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
+
+  h1, h2 {
+    font-family: 'Poppins', sans-serif;
+  }
+
 
   p {
     font-size: 1rem;
@@ -28,7 +34,7 @@
 
       a {
         color: #fff;
-        font-size: 1rem;;
+        font-size: 1rem;
         text-align: center;
         text-decoration: none;
         background-color: #21707d;
