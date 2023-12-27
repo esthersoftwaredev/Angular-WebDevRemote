@@ -42,9 +42,11 @@
       mat-nav-list {
         padding: 0;
         width: 100%;
+
         a {
           display: flex;
           color: #1a555e;
+          font-family: 'Poppins', sans-serif;
           text-transform: uppercase;
           text-decoration: none;
           font-weight: bold;
@@ -67,5 +69,3 @@
     }
   }
 }
-
-
