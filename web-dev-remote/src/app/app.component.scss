@@ -9,18 +9,32 @@
 
   .header {
     background: linear-gradient(#21707d, #1a555e);
+    display: flex;
+    justify-content: space-between;
 
-    mat-icon {
-      color: #fff;
+    .primary-nav {
+      display: flex;
+
+      mat-icon {
+        color: #fff;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          width: 5.5rem;
+          margin-left: 0.5rem;
+        }
+      }
     }
 
-    a {
-      display: flex;
-      margin: 0;
-
-      img {
-        width: 5.5rem;
-        margin-left: 0.5rem;
+    .secondary-nav {
+      a {
+        display: flex;
+        img {
+          width: 1.5rem;
+        }
       }
     }
 
