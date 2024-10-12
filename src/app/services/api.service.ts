@@ -10,7 +10,8 @@ import { Dev } from "../models/dev";
 export class ApiService {
 	// private apiUrl = "https://monacodelisa-node-express.onrender.com/api";
 	// private apiUrl = "https://monacodelisa-node-express.cyclic.app/api";
-	private apiUrl = "https://rest-api.monacodelisa.dev/api";
+	// private apiUrl = "https://rest-api.monacodelisa.dev/api";
+	private apiUrl = "https://dummy-data.ewbeserver.de/api";
 
 	constructor(private http: HttpClient) {}
 
